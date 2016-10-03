@@ -58,8 +58,8 @@ sap.ui.define([ "sap/ui/core/UIComponent",
 			var that = this;
 			sap.ui.core.BusyIndicator.show(0);
 
-			var oModel = new JSONModel("http://ptsides.phoenix-works.com:8000/customercca/handler?sap-client=800");
-			//var oModel = new JSONModel("customercca/model/data.json");
+			//var oModel = new JSONModel("http://ptsides.phoenix-works.com:8000/customercca/handler?sap-client=800");
+			var oModel = new JSONModel("customercca/model/data.json");
 
 			oModel.attachRequestCompleted(function() {
 				sap.ui.core.BusyIndicator.hide();
