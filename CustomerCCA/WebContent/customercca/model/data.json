@@ -1,0 +1,43 @@
+{ 
+	"customers" : [
+		
+		{	
+			"id" 	 		: "0",
+			"cca"			: "1000",
+			"customer"		: "123",
+			"name"	 		: "Customer 100001",
+			"credit" 		: "100",
+			"exposure"  	: "99",
+			"outstanding"	: "1",
+			"currency"		: "GSB",
+			"address"		: "123 Test Address 555",
+			"country"		: "TH"
+		},
+		{	
+			"id" 	 		: "1",
+			"cca"			: "2000",
+			"customer"		: "456",
+			"name"	 		: "Customer 100002",
+			"credit" 		: "100",
+			"exposure"  	: "100",
+			"outstanding"	: "0",
+			"currency"		: "THB",
+			"address"		: "456 Test Address 999",
+			"country"		: "EN"
+		},
+		{	
+			"id" 	 		: "2",
+			"cca"			: "3000",
+			"customer"		: "789",
+			"name"	 		: "Customer 100003",
+			"credit" 		: "100",
+			"exposure"  	: "120",
+			"outstanding"	: "-20",
+			"currency"		: "USD",
+			"address"		: "789 Test Address 000",
+			"country"		: "DE"
+		}	
+		
+	]
+
+}

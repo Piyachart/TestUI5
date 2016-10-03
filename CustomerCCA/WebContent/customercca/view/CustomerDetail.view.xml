@@ -1,0 +1,52 @@
+<mvc:View 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:form="sap.ui.layout.form"	
+	xmlns="sap.m"
+	controllerName="sap.pts.customercca.controller.CustomerDetail"
+	xmlns:html="http://www.w3.org/1999/xhtml" >
+	<Page title="{i18n>pageTitle2}"
+		  showNavButton="true"
+		  navButtonPress="onNavPress">
+		<content>								
+			<form:SimpleForm
+				minWidth="1024"
+				maxContainerCols="2"
+				editable="true"
+				layout="ResponsiveGridLayout"
+				title="Customer Information"
+				class="editableForm"
+				labelSpanL="4"
+				labelSpanM="4"
+				emptySpanL="0"
+				emptySpanM="0"
+				columnsL="2"
+				columnsM="2">
+				<form:content>				
+					<core:Title text="General" />
+					<Label design = "Bold" text="Customer"  />
+					<Input value="{customer}" editable="false" />
+					<Label design = "Bold" text="CCA" />
+					<Input value="{cca}" editable="false"/>
+					<Label design = "Bold" text="Name"/>
+					<Input value="{name}" editable="false"/>
+					<Label design = "Bold" text="Address"/>
+					<Input value="{address}" editable="false"/>
+					<Label design = "Bold" text="Country"/>
+					<Input value="{country}" editable="false"/>
+					
+					<core:Title text="Figures" />
+					<Label design = "Bold" text="Credit"/>
+					<Input value="{path: 'credit',type: 'sap.ui.model.type.Float'}" 
+						  editable="false"/>
+					<Label design = "Bold" text="Exposure"/>
+					<Input value="{path: 'exposure',type: 'sap.ui.model.type.Float'}" editable="false" />
+					<Label design = "Bold" text="Outstanding"/>
+					<Input value="{path: 'outstanding',type: 'sap.ui.model.type.Float'}" editable="false"/>
+					<Label design = "Bold" text="Currency"/>
+					<Input value="{currency}" editable="false"/>
+				</form:content>
+			</form:SimpleForm>
+		</content>
+	</Page>
+</mvc:View>
